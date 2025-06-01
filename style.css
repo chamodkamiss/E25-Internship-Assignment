@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", "Segoe UI", "Roboto", Arial, sans-serif;
+  line-height: 1.6;
+  color: #333333;
+  overflow-x: hidden;
+}
+
+.conainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  position: relative;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.hero {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 80px 0;
+  overflow: hidden;
+}
+.hero .hero-container {
+  max-width: 600px;
+  text-align: center;
+  margin: 0 auto;
+  z-index: 2;
+  position: relative;
+}
+.hero h1 {
+  color: #000743;
+}
+.hero p {
+  color: #000743;
+}
+
+/*# sourceMappingURL=style.css.map */
