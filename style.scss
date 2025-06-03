@@ -173,12 +173,33 @@ p{
 
 // AI Automation Section
 .ai-automation {
-  background: linear-gradient(125deg, $light-purple -10%, $dark-purple 60%, #000743 110%);
+  // Updated gradient with better color stops
+  background: linear-gradient(135deg, 
+    #e844d6 0%,      // Bright magenta/pink start
+    #b548c7 25%,     // Mid magenta
+    #7d4fb8 50%,     // Purple middle
+    #4a56a9 75%,     // Blue-purple
+    #1a5c9a 100%);    // Dark blue at end
+  position: relative;
+  overflow: hidden;
   color: $white;
   padding: 100px 0;
-  overflow: hidden;
-  position: relative;
   height: 523px; // Remove fixed height for better responsiveness
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 100%;
+    background-image: 
+      linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+    background-size: 40px 40px; // Larger grid squares
+    opacity: 0.8; // More visible grid
+    z-index: 1;
+  }
 
   .container {
     max-width: 1440px;
@@ -187,6 +208,8 @@ p{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
+    z-index: 2;
   }
 
   .content-left {
@@ -203,6 +226,7 @@ p{
       font-size: 54px;
       font-weight: 700;
       line-height: 110%;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.3);
     }
   
   }
@@ -222,6 +246,7 @@ p{
       background-color: $dark-blue;
       border-radius: 18px;
       z-index: 3;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 
       h3{
         font-size: 29px;
@@ -259,6 +284,7 @@ p{
         width: 100%;
         border-radius: 12px;
         rotate: 90deg;
+        box-shadow: 0 15px 35px rgba(0,0,0,0.2);
       }
     }
 
@@ -271,6 +297,7 @@ p{
       background-color: $dark-blue;
       border-radius: 18px;
       z-index: 1;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 
       img{
         width: 270px;
@@ -291,8 +318,130 @@ p{
         width: 100%;
         border-radius: 12px;
         rotate: 90deg;
+        box-shadow: 0 15px 35px rgba(0,0,0,0.2);
       }
     }
   }
 
+}
+
+//Collaboration Section
+.collaboration{
+  position: relative;
+  height: 523px;
+
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+
+    .award{
+      display: flex;
+      align-items: center;
+      width: 460px;
+      height: 340px;
+      position: relative;
+      top: 21px;
+      left: 120px;
+
+      .fa-chevron-left, .fa-chevron-right {
+      position: absolute;
+      font-size: 30px;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 20%;
+      cursor: pointer;
+    }
+    
+    .fa-chevron-left {
+      left: -80px;
+      z-index: 3;
+    }
+    
+    .fa-chevron-right {
+      left: 78%;
+      z-index: 3;
+    }
+
+
+      .award-badge{
+        width: 320px;
+        height: 340px;
+        background: rgba(255, 255, 255, 1);
+        border-radius: 20px;
+        border: 10px solid rgba(255, 255, 255, 0.01);
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.18);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        margin-right: 60px;
+        position: relative;
+
+        img{
+          width: 188px;
+          height: auto;
+          position: static;
+          margin-bottom: 20px;
+
+        }
+
+        .rating{
+          border-top: 1px solid rgba(0, 0, 0, 0.1);
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          gap: 20px;
+          
+          
+          .rating-score {
+            margin-top: 40px;
+            font-size: 22px;
+            font-weight: 700;
+            color: $dark-blue;
+            margin-bottom: 5px;
+          }
+    
+          .stars {
+            font-size: 22px;
+            color: #FFB800; 
+            margin-top: 40px; // Gold star color
+          }
+        }
+      }
+    }
+
+    .content {
+      width: 660px;
+      height: 528px;
+      padding: 140px 0px 140px 0px;
+    
+    h2 {
+      font-size: 60px;
+      color: $dark-blue;
+      font-weight: 700;
+      list-style: 110%;
+    }
+    
+    p {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 160%;
+      color: $dark-blue;
+    }
+  }
+
+
+  }
 }
