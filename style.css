@@ -205,52 +205,82 @@ p {
   line-height: 110%;
 }
 .ai-automation .content-right {
-  width: 590px;
+  width: 45%;
+  position: relative;
+  height: auto;
+}
+.ai-automation .content-right .content-right-1 {
+  width: 280px;
   height: 523px;
   position: relative;
-}
-.ai-automation .content-right .tablet-mockup {
-  position: absolute;
-  right: -10px;
-  top: 420px;
-  width: 320px;
-  height: 440px;
+  top: 61px;
+  left: 16px;
+  background-color: #000743;
+  border-radius: 18px;
   z-index: 3;
 }
-.ai-automation .content-right .tablet-mockup img {
-  width: 100%;
-  top: 561px;
-  rotate: 90deg;
-}
-.ai-automation .content-right .book-mockup {
+.ai-automation .content-right .content-right-1 h3 {
+  font-size: 29px;
+  font-weight: 700;
+  line-height: 110%;
+  letter-spacing: -3%;
   position: absolute;
-  right: 120px;
+  top: 164px;
+  left: 35px;
+  background: linear-gradient(74.66deg, #FF3366 9.7%, #007AFF 65.04%, #39CCCC 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.ai-automation .content-right .content-right-1 p {
+  position: absolute;
+  top: 277px;
+  left: 35px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 130%;
+  color: #FFFFFF;
+}
+.ai-automation .content-right .tablet-mockup1 {
+  position: absolute;
+  left: -45px;
   top: 50%;
   transform: translateY(-50%);
-  width: 250px;
-  height: 350px;
-  background: #0c0033;
-  border-radius: 12px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  width: 400px;
   z-index: 4;
 }
-.ai-automation .content-right .book-mockup .book-content {
-  padding: 20px;
+.ai-automation .content-right .tablet-mockup1 img {
+  width: 100%;
+  border-radius: 12px;
+  rotate: 90deg;
 }
-.ai-automation .content-right .book-mockup .book-content h3 {
-  color: #ff3b97;
-  font-size: 26px;
-  margin-bottom: 16px;
-  line-height: 1.2;
+.ai-automation .content-right .content-right-2 {
+  width: 265px;
+  height: 388px;
+  position: absolute;
+  top: -105px;
+  right: 52px;
+  background-color: #000743;
+  border-radius: 18px;
+  z-index: 1;
 }
-.ai-automation .content-right .book-mockup .book-content p {
-  color: #ffffff;
-  font-size: 16px;
-  opacity: 0.9;
+.ai-automation .content-right .content-right-2 img {
+  width: 270px;
+  height: 315px;
+  position: absolute;
+  top: 30px;
+}
+.ai-automation .content-right .document-mockup {
+  position: absolute;
+  top: -60px;
+  right: -15px;
+  width: 400px;
+  z-index: 2;
+}
+.ai-automation .content-right .document-mockup img {
+  width: 100%;
+  border-radius: 12px;
+  rotate: 90deg;
 }
 
 /*# sourceMappingURL=style.css.map */
