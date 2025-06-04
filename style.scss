@@ -441,7 +441,55 @@ p{
       color: $dark-blue;
     }
   }
+  }
+}
 
+// Call to Action Section
+.cta {
+  background: 
+    radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.2) 0%, transparent 40%),
+              linear-gradient(135deg, #c2b8ff 0%, #5971f6 40%, #002557 100%);
+  padding: 160px 80px;
+  height: 585px;
+  position: relative;
+  overflow: hidden;
+  
+  // Adjust grid opacity to be more subtle
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+      linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+    background-size: 30px 30px;
+    opacity: 0.6; // Reduced opacity to match reference
+    z-index: 1;
+  }
 
+  .container{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+  }
+
+  h2{
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 100%;
+    color: $white;
+    letter-spacing: -3%;
+    text-align: center;
+    margin-bottom: 60px;
   }
 }
