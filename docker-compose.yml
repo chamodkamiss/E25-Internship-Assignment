@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  web:
+    build: .
+    ports:
+      - "3000:80"  # Maps container port 80 to host port 3000
+    volumes:
+      - ./:/usr/share/nginx/html  # Syncs website files from host to container
+      # Uncomment the line below if you want to edit your virtual host without rebuilding
+      # - ./nginx-vhost.conf:/etc/nginx/sites-available/default.conf
+    restart: always
