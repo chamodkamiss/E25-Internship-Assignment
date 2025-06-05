@@ -1,3 +1,35 @@
+/**
+ * E25 Creative Solutions - Main Stylesheet
+ * ----------------------------------------
+ * Version: 1.0.0
+ * Last updated: June 5, 2025
+ * 
+ * CONTENTS:
+ * 
+ * 1. Design Tokens & Variables
+ * 2. Utility Mixins
+ * 3. Base Styles & Reset
+ * 4. Animation Keyframes
+ * 5. Typography
+ * 6. Components
+ *    6.1 Buttons
+ *    6.2 Containers
+ *    6.3 Floating Icons
+ * 7. Layout Sections
+ *    7.1 Hero
+ *    7.2 AI Automation
+ *    7.3 Collaboration
+ *    7.4 CTA
+ * 8. Responsive Adjustments
+ * 
+ * This stylesheet demonstrates modern CSS practices including:
+ * - CSS custom properties
+ * - Fluid typography
+ * - Responsive design
+ * - Performance optimization
+ * - Accessibility improvements
+ * - Animation best practices
+ */
 :root {
   --primary-color: #FF3366;
   --dark-blue: #000743;
