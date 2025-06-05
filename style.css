@@ -1045,4 +1045,8 @@ table {
   }
 }
 
+figcaption {
+  display: none;
+}
+
 /*# sourceMappingURL=style.css.map */
