@@ -47,7 +47,7 @@ E25 Internship Assignment/
 
 1. Clone the repository
    ```bash
-   git clone https://github.com/yourusername/e25-internship-assignment.git
+   git clone https://github.com/chamodkamiss/e25-internship-assignment.git
    ```
 2. If you have Node.js installed, you can use a SCSS compiler:
    ```bash
